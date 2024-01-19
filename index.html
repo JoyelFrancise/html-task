@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .maincont {
+            height: 500px;
+            width: 900px;
+            background-color: grey;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .cont {
+            height: 300px;
+            width: 230px;
+            background-color: rgb(67, 49, 49);
+            border-radius: 10px;
+        }
+
+        .cont2 {
+            height: 400px;
+            width: 230px;
+            background-color: rgb(67, 49, 49);
+            border-radius: 10px;
+        }
+
+        .topsec {
+            height: 125px;
+            width: 230px;
+            background-color: antiquewhite;
+            border-radius: 10px 10px 0px 0px;
+            background-image: url(./images/city.jpeg);
+            background-size: cover;
+        }
+
+        .cont1:hover .topsec {
+            background-image: url(./images/istan.jpeg);
+        }
+
+        .cont1:hover .botsec {
+            background-color: blue;
+
+        }
+        .cont1:hover .daysAgo{
+            color: blue;
+
+        }
+        .cont2:hover .toppsec {
+            background-image: url(./images/india.jpeg);
+        }
+        
+        .cont2:hover .botssec{
+            color: rgb(0, 0, 0);
+            background-color: aqua;
+        }
+        .cont2:hover .dayAgo{
+            color: rgb(0, 204, 255);
+
+        }
+        .cont3:hover .topssec{
+            background-image: url(./images/canada.jpeg);
+        }
+        .cont3:hover .bottsec{
+            color: rgb(255, 255, 255);
+            background-color: rgb(101, 70, 240);
+        }
+        .cont3:hover .dayssAgo{
+            color:rgb(101, 70, 240);
+
+        }
+        .toppsec {
+            height: 165px;
+            width: 230px;
+            background-color: antiquewhite;
+            border-radius: 10px 10px 0px 0px;
+            background-image: url(./images/aes.jpeg);
+            background-size: cover;
+        }
+
+        .topssec {
+            height: 125px;
+            width: 230px;
+            background-color: antiquewhite;
+            border-radius: 10px 10px 0px 0px;
+            background-image: url(./images/green.jpeg);
+            background-size: cover;
+        }
+
+
+        .midsec {
+            height: 125px;
+            width: 230px;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+        }
+
+        .middsec {
+            height: 165px;
+            width: 230px;
+            background-color: rgb(255, 255, 255);
+            padding: 25px;
+        }
+
+        .botsec {
+            height: 50px;
+            width: 230px;
+            background-color: rgb(255, 0, 85);
+            border-radius: 0px 0px 10px 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 10px;
+            /* padding: 10px; */
+            color: white;
+        }
+
+        p {
+            text-align: center;
+            padding: 5px;
+        }
+
+        .daysAgo {
+            color: rgb(255, 0, 85);
+            font-size: 10px;
+            padding: 3px;
+        }
+
+        .dayAgo {
+            color: orangered;
+            font-size: 10px;
+            padding: 3px;
+        }
+
+        .dayssAgo {
+            color: green;
+            font-size: 10px;
+            padding: 3px;
+        }
+
+        .botssec {
+            height: 80px;
+            width: 230px;
+            background-color: orangered;
+            border-radius: 0px 0px 10px 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 13px;
+            /* padding: 10px; */
+            color: white;
+        }
+
+        .bottsec {
+            height: 50px;
+            width: 230px;
+            background-color: green;
+            border-radius: 0px 0px 10px 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 10px;
+            /* padding: 10px; */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincont">
+        <div class="cont1">
+            <div class="topsec"></div>
+            <div class="midsec">
+                <p class="daysAgo">4 days ago</p>
+                <b>
+                    <p>Post One</p>
+                </b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, maiores!
+                </p>
+            </div>
+            <div class="botsec">
+                <div class="read">
+                    <p>4<sup>m</sup> <br>READ</p>
+                </div>
+                <div class="view">
+                    <p>5123<br>VIEWS</p>
+                </div>
+                <div class="comments">
+                    <p>32<br>COMMENTS</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont2">
+            <div class="toppsec"></div>
+            <div class="middsec">
+                <p class="dayAgo">1 week ago</p>
+                <b>
+                    <p>Post Two</p>
+                </b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, maiores!
+                </p>
+            </div>
+            <div class="botssec">
+                <div class="read">
+                    <p>7<sup>m</sup> <br>READ</p>
+                </div>
+                <div class="view">
+                    <p>7152<br>VIEWS</p>
+                </div>
+                <div class="comments">
+                    <p>21<br>COMMENTS</p>
+                </div>
+            </div>
+        </div>
+        <div class="cont3">
+            <div class="topssec"></div>
+            <div class="midsec">
+                <p class="dayssAgo">3 week ago</p>
+                <b>
+                    <p>Post Three</p>
+                </b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, maiores!
+                </p>
+            </div>
+            <div class="bottsec">
+                <div class="read">
+                    <p>5<sup>m</sup> <br>READ</p>
+                </div>
+                <div class="view">
+                    <p>3021<br>VIEWS</p>
+                </div>
+                <div class="comments">
+                    <p>15<br>COMMENTS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
